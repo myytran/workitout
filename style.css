@@ -2,6 +2,52 @@ body {
   box-sizing: border-box;
   display: center;
   border: 5px solid;
-  background-color: teal;
-  border-color: purple;
+  background-color: cornsilk;
+
+}
+
+.container {
+  display:block;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+
+
+}
+
+#resultstitle {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: 'Bangers', cursive;
+  margin-top: 50px;
+
+
+
+}
+
+.results {
+  display: block;
+  font-size:15px;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  margin-top:50px;
+}
+
+.randomize {
+ display: block;
+ margin: auto;
+ margin-bottom: 50px;
+  border-color: black;
+  background-color: white;
+
+}
+
+img {
+  display:block;
+  margin:auto;
+  border-style: double;
+  border-width: 7px;
+
 }
