@@ -1,0 +1,7 @@
+body {
+  box-sizing: border-box;
+  display: center;
+  border: 5px solid;
+  background-color: teal;
+  border-color: purple;
+}
