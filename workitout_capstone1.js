@@ -1,14 +1,12 @@
-const ytURL= 'https://www.googleapis.com/youtube/v3/search';
+const ytURL= 'https://www.googleapis.com/youtube/v3/search'; // API key
 
-const params = {
+const params = { //parameters in object
   'part': 'snippet',
   'key':'AIzaSyB2GqU6ctQPiYz9131aSb6w1_AZCXmZV_A',
   'q': 'workouts',
   'maxResults': 50,
-  'nextpageToken':'CDIQAA' //nextPageToken
+  'nextpageToken':'CDIQAA' //nextPageToken, need to call for next page so 50 results don't repeat
 }
-
-let results;
 
 $(document).ready(function() {
   $('.search').click(function(e) {
@@ -30,16 +28,15 @@ function searchYouTube() {
     pickRandomVideo();
 
   });
-}
+};
 
 function pickRandomVideo(){
    $('.results').html('');
   var ran = Math.floor(Math.random() * results.items.length) + 1;
-    //for(var i=0; i<data.items.length; i++)  {
+
+
       $('.results').append('<p><h2>'+results.items[ran].snippet.title+'</h2>');
       $('.results').append('<img src="'+results.items[ran].snippet.thumbnails.high.url+'"/></p>');
-    //}
-  // remove the results.items[ran];
-  // if the length of results when you call this function is 0 then we need to call the next page of the API results
-  // using nextPageToken
+
+
 }

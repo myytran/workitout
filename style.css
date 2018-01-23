@@ -11,6 +11,7 @@ body {
   font-size: 20px;
   text-align: center;
   font-family: 'Bangers', cursive;
+  margin-top: 50px;
 
 
 }
@@ -49,5 +50,12 @@ img {
   margin:auto;
   border-style: double;
   border-width: 7px;
+
+}
+
+.search {
+background-color: cornsilk;
+margin: auto;
+
 
 }
