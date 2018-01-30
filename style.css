@@ -1,10 +1,27 @@
 body {
-  box-sizing: border-box;
-  display: center;
-  border: 5px solid;
-  background-color: cornsilk;
+box-sizing: border-box;
+display: center;
+font-family: 'Bangers', cursive;
+background:
+-webkit-linear-gradient(rgba(28, 28, 31, 0.1), rgba(28, 28, 31, 0.8)),
+	-webkit-linear-gradient(rgba(28, 28, 31, 0.5), rgba(28, 28, 31, 0.3)),
+	url('../workitout/images/pexels-photo-305239.jpeg');
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+		opacity: 0.6;
+		margin-bottom: 150px;
+	}
 
-}
+	main {
+background: wheat ;
+margin: 100px;
+border-style: double;
+	}
 
 .container {
   display:block;
@@ -12,8 +29,7 @@ body {
   text-align: center;
   font-family: 'Bangers', cursive;
   margin-top: 50px;
-
-
+	margin:auto;
 }
 
 #resultstitle {
@@ -23,25 +39,30 @@ body {
   font-size: 20px;
   font-family: 'Bangers', cursive;
   margin-top: 50px;
-
-
-
 }
 
 .results {
-  display: block;
+  display: inline-block;
   font-size:15px;
   font-family: 'Bangers', cursive;
   text-align: center;
-  margin-top:50px;
+  margin-top:45px;
+	}
+
+ img {
+display: flex;
+width: 100%;
 }
 
-.randomize {
- display: block;
+
+/*Buttons Styling*/
+
+.randomize,  .search {
+ display: inline-block;
  margin: auto;
- margin-bottom: 50px;
-  border-color: black;
-  background-color: white;
+ border-style: groove;
+background-color: tan;
+margin-bottom: 50px;
 
 }
 
@@ -52,10 +73,31 @@ img {
   border-width: 7px;
 
 }
+/*
+Footer Styling
+*/
+footer {
+	background-color: tan;
+	position: fixed;
+	bottom: 10px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+}
 
-.search {
-background-color: cornsilk;
-margin: auto;
+#copyright {
+	font-size: 12px;
+	margin: 0;
+	position: absolute;
+	left: 15px;
+	bottom: 20px;
+}
 
-
+#github-logo {
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
 }

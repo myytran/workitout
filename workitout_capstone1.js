@@ -5,7 +5,7 @@ const params = { //parameters in object
   'key':'AIzaSyB2GqU6ctQPiYz9131aSb6w1_AZCXmZV_A',
   'q': 'workouts',
   'maxResults': 50,
-  'nextpageToken':'CDIQAA' //nextPageToken, need to call for next page so 50 results don't repeat
+  'ID':0 //nextPageToken, need to call for next page so 50 results don't repeat
 }
 
 $(document).ready(function() {
@@ -14,6 +14,7 @@ $(document).ready(function() {
     var query = $('.query').val();
     params.q= query;
     searchYouTube();
+    $('.query').val(''); //clears out query after searchYouTube runs
   });
 
   $('.randomize').click(function(){
@@ -37,6 +38,4 @@ function pickRandomVideo(){
 
       $('.results').append('<p><h2>'+results.items[ran].snippet.title+'</h2>');
       $('.results').append('<img src="'+results.items[ran].snippet.thumbnails.high.url+'"/></p>');
-
-
 }
