@@ -43,7 +43,7 @@ function pickRandomVideo(){
 
 
         $('.results').append('<h2>Results</h2><br><p><h3>'+results.items[ran].snippet.title+'</h3>');
-        $('.results').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+results.items[ran].id.videoId+'?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+        $('.results').append('<iframe width="500" height="300" align="middle" src="https://www.youtube.com/embed/'+results.items[ran].id.videoId+'?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
 
         results.items.splice(ran,1);
       } else {
