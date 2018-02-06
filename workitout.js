@@ -42,7 +42,7 @@ function pickRandomVideo(){
       var ran = Math.floor(Math.random() * results.items.length) + 1;
 
 
-        $('.results').append('<h2>Results</h2><br><p><h3>'+results.items[ran].snippet.title+'</h3>');
+        $('.results').append('<h2>Results</h2><br><p><h6>'+results.items[ran].snippet.title+'</h6>');
         $('.results').append('<iframe width="500" height="300" align="middle" src="https://www.youtube.com/embed/'+results.items[ran].id.videoId+'?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
 
         results.items.splice(ran,1);
